@@ -1,0 +1,16 @@
+{
+"builders": [
+ {
+ "type": "docker",
+ "image": "ubuntu:14.04",
+ "commit": "true"
+ }
+],
+"post-processors": [
+ {
+ "type": "docker-tag",
+ "repository": "how2dock/packer",
+ "tag": "latest"
+ }
+]
+}
